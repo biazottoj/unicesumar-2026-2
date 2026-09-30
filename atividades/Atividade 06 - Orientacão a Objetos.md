@@ -1,303 +1,253 @@
-# Exercícios de Orientação a Objetos
+# Lista de Exercícios — Orientação a Objetos
 
-## Lista de Exercícios
+## Conteúdos abordados
+- Classe
+- Objeto
+- Método
+- Atributo
+- Herança
+- Abstração
 
-1. Qual conceito da Orientação a Objetos representa um modelo utilizado para criar objetos?  
-   a) Método  
-   b) Classe  
-   c) Atributo  
-   d) Interface
+---
 
-2. Um objeto é:  
-   a) Uma função independente  
-   b) Uma instância de uma classe  
-   c) Um tipo de variável primitiva  
-   d) Um pacote Java
+## Exercícios
 
-3. Qual alternativa representa melhor um **atributo**?  
-   a) `calcularTotal()`  
-   b) `nome`  
-   c) `Cliente()`  
-   d) `public`
-
-4. Qual alternativa representa melhor um **método**?  
-   a) `idade`  
-   b) `saldo`  
-   c) `depositar()`  
-   d) `Cliente`
-
-5. Em uma classe `Pessoa`, qual dos itens abaixo provavelmente seria um atributo?  
-   a) `nome`  
-   b) `cadastrar()`  
-   c) `Pessoa()`  
-   d) `main()`
-
-6. Em uma classe `ContaBancaria`, qual dos itens abaixo provavelmente seria um método?  
-   a) `saldo`  
-   b) `numeroConta`  
-   c) `depositar()`  
-   d) `titular`
-
-7. Qual conceito permite esconder os detalhes internos de um objeto e controlar o acesso aos seus dados?  
-   a) Herança  
-   b) Encapsulamento  
-   c) Polimorfismo  
-   d) Sobrecarga
-
-8. Qual modificador normalmente é utilizado para impedir o acesso direto a um atributo fora da classe?  
-   a) `public`  
-   b) `private`  
-   c) `static`  
-   d) `final`
-
-9. Métodos `get` são normalmente utilizados para:  
-   a) Modificar atributos  
-   b) Consultar valores de atributos  
-   c) Criar objetos  
-   d) Excluir classes
-
-10. Métodos `set` são normalmente utilizados para:  
-   a) Alterar valores de atributos  
-   b) Criar novas classes  
-   c) Destruir objetos  
-   d) Criar herança
-
-11. Qual conceito permite que uma classe reutilize características de outra classe?  
-   a) Encapsulamento  
-   b) Herança  
-   c) Abstração  
-   d) Sobrecarga
-
-12. Se `Cachorro` herda de `Animal`, podemos afirmar que:  
-   a) Animal é uma subclasse de Cachorro  
-   b) Cachorro é uma subclasse de Animal  
-   c) As classes não possuem relação  
-   d) Animal é um método
-
-13. Na relação `Carro` herda de `Veiculo`, qual é a superclasse?  
-   a) Carro  
-   b) Veiculo  
-   c) Motor  
-   d) Nenhuma
-
-14. Qual relação abaixo representa adequadamente uma herança?  
-   a) Cachorro é um Animal  
-   b) Carro possui um Motor  
-   c) Pessoa possui um CPF  
-   d) Pedido possui Produtos
-
-15. Qual das alternativas abaixo **não** representa uma boa relação de herança?  
-   a) Professor é uma Pessoa  
-   b) Cachorro é um Animal  
-   c) Carro é um Motor  
-   d) Gerente é um Funcionário
-
-16. Qual conceito permite que objetos de diferentes classes respondam de formas diferentes à mesma operação?  
-   a) Encapsulamento  
-   b) Polimorfismo  
-   c) Composição  
-   d) Instanciação
-
-17. `Animal` possui o método `emitirSom()`. `Cachorro` redefine esse método para latir. Qual conceito está sendo aplicado?  
-   a) Sobrecarga  
-   b) Sobrescrita  
-   c) Encapsulamento  
-   d) Composição
-
-18. Quando uma subclasse fornece uma nova implementação para um método herdado, temos:  
-   a) Sobrecarga  
-   b) Sobrescrita  
-   c) Abstração  
-   d) Encapsulamento
-
-19. Ter dois métodos chamados `calcular`, mas com parâmetros diferentes, representa:  
-   a) Sobrescrita  
-   b) Sobrecarga  
-   c) Herança múltipla  
-   d) Encapsulamento
-
-20. Qual situação representa **sobrecarga de métodos**?  
-   a) `somar(int a, int b)` e `somar(double a, double b)`  
-   b) Uma classe herdar de outra  
-   c) Um atributo ser privado  
-   d) Uma classe possuir um objeto
-
-21. Qual é a principal função de um construtor?  
-   a) Destruir objetos  
-   b) Inicializar objetos  
-   c) Criar métodos abstratos  
-   d) Criar interfaces
-
-22. Qual método é executado normalmente no momento da criação de um objeto?  
-   a) Getter  
-   b) Setter  
-   c) Construtor  
-   d) Método abstrato
-
-23. Em Java, o nome de um construtor deve ser:  
-   a) Igual ao nome da classe  
-   b) Sempre `constructor`  
-   c) Igual ao nome do primeiro atributo  
-   d) Sempre `main`
-
-24. Uma classe pode possuir mais de um construtor?  
-   a) Não  
-   b) Sim, desde que tenham parâmetros diferentes  
-   c) Sim, desde que todos sejam iguais  
-   d) Apenas quando é abstrata
-
-25. Criar um objeto a partir de uma classe é chamado de:  
-   a) Encapsulamento  
-   b) Instanciação  
-   c) Sobrescrita  
-   d) Generalização
-
-26. Na instrução conceitual `Pessoa p = new Pessoa()`, `p` representa:  
-   a) Uma classe  
-   b) Uma referência para um objeto  
-   c) Um método  
-   d) Uma interface
-
-27. Qual conceito busca representar somente as características importantes de uma entidade, ignorando detalhes desnecessários?  
-   a) Abstração  
-   b) Sobrecarga  
-   c) Instanciação  
-   d) Associação
-
-28. Uma classe abstrata pode ser utilizada principalmente para:  
-   a) Representar uma ideia geral que será especializada por outras classes  
-   b) Criar apenas variáveis  
-   c) Impedir completamente a herança  
-   d) Substituir todos os objetos
-
-29. Uma classe abstrata normalmente:  
-   a) Pode ser instanciada diretamente  
-   b) Não pode ser instanciada diretamente  
-   c) Não pode possuir métodos  
-   d) Não pode possuir atributos
-
-30. Um método abstrato possui como característica principal:  
-   a) Não possuir implementação na classe abstrata  
-   b) Ser sempre privado  
-   c) Não possuir nome  
-   d) Ser obrigatoriamente estático
-
-31. Qual elemento é utilizado para definir um conjunto de comportamentos que uma classe deve implementar?  
-   a) Interface  
-   b) Atributo  
-   c) Construtor  
-   d) Pacote
-
-32. Quando uma classe implementa uma interface, ela assume o compromisso de:  
-   a) Implementar os métodos exigidos pela interface  
-   b) Transformar todos os atributos em públicos  
-   c) Não possuir construtores  
-   d) Não utilizar herança
-
-33. Considere a interface `Pagamento` com o método `pagar()`. Qual classe faria sentido implementar essa interface?  
-   a) CartaoCredito  
-   b) Pessoa  
-   c) Endereco  
-   d) DataNascimento
-
-34. Qual alternativa representa melhor uma interface?  
-   a) Um contrato de comportamentos  
-   b) Um objeto já criado  
-   c) Uma variável primitiva  
-   d) Um construtor especial
-
-35. Qual conceito está sendo utilizado quando uma classe possui um objeto de outra classe?  
-   a) Associação  
-   b) Sobrescrita  
-   c) Sobrecarga  
-   d) Instanciação
-
-36. `Pessoa` possui um `Endereco`. Essa relação pode ser classificada genericamente como:  
-   a) Associação  
-   b) Herança  
-   c) Sobrescrita  
-   d) Polimorfismo
-
-37. Qual expressão representa melhor uma relação de composição?  
-   a) É um  
-   b) Possui um  
-   c) Executa um  
-   d) Herda um
-
-38. Qual relação representa melhor composição?  
-   a) Casa possui Quartos  
-   b) Cachorro é Animal  
-   c) Professor é Pessoa  
-   d) Carro é Veículo
-
-39. Qual relação representa melhor uma relação do tipo **“é um”**?  
-   a) Carro é um Veículo  
-   b) Carro possui um Motor  
-   c) Pessoa possui um Endereço  
-   d) Pedido possui Produtos
-
-40. Qual relação representa melhor uma relação do tipo **“possui um”**?  
-   a) Aluno é Pessoa  
-   b) Cachorro é Animal  
-   c) Carro possui Motor  
-   d) Gerente é Funcionário
-
-41. Uma classe `Produto` possui `nome`, `preco` e `estoque`. Esses elementos são:  
+1. Em um sistema acadêmico, `Aluno` possui `nome`, `matricula` e `curso`. Esses elementos representam:
    a) Métodos  
    b) Atributos  
-   c) Construtores  
-   d) Interfaces
+   c) Objetos  
+   d) Classes derivadas
 
-42. Uma classe `Produto` possui `calcularDesconto()` e `atualizarEstoque()`. Esses elementos são:  
+2. Em uma classe `ContaBancaria`, as operações `depositar()` e `sacar()` representam:
    a) Atributos  
    b) Métodos  
-   c) Classes abstratas  
-   d) Objetos
+   c) Objetos  
+   d) Classes
 
-43. Considere `Aluno`, `Professor`, `Disciplina` e `String`. Qual alternativa provavelmente representa uma classe do domínio de um sistema escolar?  
-   a) `Aluno`  
-   b) `public`  
-   c) `if`  
-   d) `return`
+3. Qual alternativa apresenta apenas elementos que poderiam ser atributos de uma classe `Produto`?
+   a) `nome`, `preco`, `estoque`  
+   b) `calcularPreco()`, `nome`, `vender()`  
+   c) `Produto`, `estoque`, `atualizar()`  
+   d) `comprar()`, `vender()`, `listar()`
 
-44. Em um sistema de biblioteca, qual alternativa provavelmente representa uma classe?  
-   a) Livro  
-   b) Emprestar  
-   c) Público  
-   d) Repetir
+4. Em um sistema de biblioteca, qual alternativa representa melhor uma possível classe?
+   a) `Livro`  
+   b) `emprestar()`  
+   c) `titulo`  
+   d) `quantidadePaginas`
 
-45. Em um sistema de vendas, qual alternativa provavelmente representa um método da classe `Pedido`?  
-   a) `numeroPedido`  
-   b) `dataPedido`  
-   c) `calcularTotal()`  
-   d) `cliente`
+5. Uma classe pode ser entendida como:
+   a) Uma definição que descreve características e comportamentos de objetos  
+   b) Um valor armazenado em uma variável  
+   c) Um objeto específico criado durante a execução  
+   d) Uma operação realizada por um objeto
 
-46. Em um sistema bancário, qual alternativa provavelmente representa um atributo da classe `Conta`?  
-   a) `sacar()`  
-   b) `depositar()`  
-   c) `saldo`  
-   d) `transferir()`
+6. Dois objetos criados a partir da mesma classe:
+   a) Devem possuir exatamente os mesmos valores em seus atributos  
+   b) Podem possuir valores diferentes para seus atributos  
+   c) Não podem executar os mesmos métodos  
+   d) Representam obrigatoriamente classes diferentes
 
-47. Qual princípio é aplicado ao declarar `saldo` como privado e permitir sua alteração apenas através de métodos específicos?  
-   a) Polimorfismo  
-   b) Encapsulamento  
-   c) Herança  
-   d) Sobrecarga
+7. Em uma aplicação, `cliente1` e `cliente2` possuem nome e CPF diferentes, mas seguem a mesma estrutura. A explicação mais adequada é:
+   a) São métodos da mesma classe  
+   b) São objetos da mesma classe  
+   c) São atributos de classes diferentes  
+   d) São duas subclasses
 
-48. `Funcionario` possui o método `calcularSalario()`. `Gerente` e `Vendedor` implementam cálculos diferentes para esse método. Qual conceito está sendo explorado?  
-   a) Polimorfismo  
-   b) Encapsulamento  
-   c) Composição  
-   d) Instanciação
+8. Qual alternativa descreve melhor um objeto?
+   a) Uma definição genérica utilizada para representar um tipo de entidade  
+   b) Uma instância concreta de uma classe  
+   c) Uma operação realizada dentro de uma classe  
+   d) Uma característica comum entre subclasses
 
-49. Observe os elementos abaixo: `nome`, `idade`, `andar()` e `Pessoa`. Qual deles representa uma classe?  
-   a) `nome`  
-   b) `idade`  
-   c) `andar()`  
-   d) `Pessoa`
+9. Considere uma classe `Carro` com `modelo`, `ano` e `velocidadeAtual`. Esses elementos descrevem:
+   a) O estado dos objetos da classe  
+   b) A hierarquia da classe  
+   c) Os comportamentos da classe  
+   d) As subclasses disponíveis
 
-50. Observe os elementos abaixo de uma classe `Carro`: `modelo`, `ano`, `acelerar()` e `frear()`. Qual alternativa está correta?  
-   a) Todos são atributos  
-   b) Todos são métodos  
-   c) `modelo` e `ano` são atributos; `acelerar()` e `frear()` são métodos  
-   d) `modelo` e `ano` são métodos; `acelerar()` e `frear()` são atributos
+10. Na classe `Carro`, `acelerar()` e `frear()` indicam:
+    a) Características armazenadas  
+    b) Comportamentos possíveis dos objetos  
+    c) Classes relacionadas  
+    d) Objetos criados
+
+11. Em uma classe `Pessoa`, qual alternativa apresenta corretamente um atributo e um método, nessa ordem?
+    a) `nome` e `falar()`  
+    b) `andar()` e `idade`  
+    c) `Pessoa` e `nome`  
+    d) `falar()` e `andar()`
+
+12. Considere a classe `Livro` com os elementos `titulo`, `autor`, `emprestar()` e `devolver()`. Qual alternativa está correta?
+    a) Todos são atributos  
+    b) Todos são métodos  
+    c) `titulo` e `autor` são atributos; os demais são métodos  
+    d) `titulo` e `autor` são métodos; os demais são atributos
+
+13. Em um sistema de vendas, qual alternativa representa melhor um método da classe `Pedido`?
+    a) `data`  
+    b) `valorTotal`  
+    c) `calcularTotal()`  
+    d) `numero`
+
+14. Em um sistema escolar, qual alternativa representa melhor um atributo da classe `Aluno`?
+    a) `matricula`  
+    b) `realizarProva()`  
+    c) `consultarNota()`  
+    d) `entregarTrabalho()`
+
+15. Em uma classe `Lampada`, `ligada` armazena se a lâmpada está acesa ou apagada. Esse elemento é:
+    a) Um método  
+    b) Um atributo  
+    c) Uma classe  
+    d) Uma abstração
+
+16. Em uma classe `Lampada`, `ligar()` altera o estado da lâmpada. Esse elemento é:
+    a) Um objeto  
+    b) Um atributo  
+    c) Um método  
+    d) Uma superclasse
+
+17. Qual alternativa apresenta melhor uma classe e um objeto dessa classe?
+    a) `Carro` e um Honda Civic específico  
+    b) `acelerar()` e `velocidade`  
+    c) `nome` e `Pessoa`  
+    d) `Animal` e `emitirSom()`
+
+18. Em um sistema de restaurantes, `Mesa` é usada para representar todas as mesas do estabelecimento. `mesa12` representa uma mesa específica. Nesse caso:
+    a) Ambos são classes  
+    b) `Mesa` é classe e `mesa12` é objeto  
+    c) `Mesa` é objeto e `mesa12` é classe  
+    d) Ambos são métodos
+
+19. Qual alternativa apresenta um conjunto coerente para uma classe `Filme`?
+    a) `titulo`, `duracao`, `reproduzir()`  
+    b) `assistir()`, `pausar()`, `reproduzir()` apenas como atributos  
+    c) `Filme`, `Cinema`, `Sala` como atributos obrigatórios  
+    d) `titulo()`, `duracao()`, `ano()` como classes
+
+20. Uma classe `Funcionario` possui `nome`, `salario` e `calcularPagamento()`. Qual alternativa identifica corretamente esses elementos?
+    a) Dois métodos e um atributo  
+    b) Dois atributos e um método  
+    c) Três atributos  
+    d) Três métodos
+
+21. Considere as classes `Animal` e `Cachorro`, sendo `Cachorro` uma especialização de `Animal`. Qual afirmação é correta?
+    a) `Animal` pode reunir características comuns utilizadas por `Cachorro`  
+    b) `Animal` precisa possuir todas as características específicas de `Cachorro`  
+    c) As duas classes não podem compartilhar métodos  
+    d) `Cachorro` precisa ser um objeto de `Animal`
+
+22. Qual par de classes apresenta uma relação de herança mais coerente?
+    a) `Funcionario` e `Gerente`  
+    b) `Carro` e `Motor`  
+    c) `Pedido` e `Produto`  
+    d) `Aluno` e `Disciplina`
+
+23. Em uma hierarquia formada por `Veiculo`, `Carro` e `Moto`, qual organização é mais adequada?
+    a) `Carro` e `Moto` podem especializar `Veiculo`  
+    b) `Veiculo` deve especializar `Carro`  
+    c) `Moto` deve especializar `Carro`  
+    d) As três classes devem ser objetos umas das outras
+
+24. Uma vantagem da herança é:
+    a) Permitir o reaproveitamento de características comuns entre classes relacionadas  
+    b) Fazer com que todos os objetos tenham os mesmos valores  
+    c) Eliminar a necessidade de métodos  
+    d) Transformar atributos em objetos automaticamente
+
+25. Considere `Pessoa`, `Aluno` e `Professor`. Qual estrutura faz mais sentido?
+    a) `Aluno` e `Professor` especializam `Pessoa`  
+    b) `Pessoa` especializa `Aluno` e `Professor` simultaneamente  
+    c) `Aluno` especializa `Professor`  
+    d) `Professor` especializa `Aluno`
+
+26. Em uma hierarquia, uma subclasse:
+    a) Pode possuir características próprias além das herdadas  
+    b) Deve ser idêntica à superclasse  
+    c) Não pode possuir métodos  
+    d) Não pode possuir atributos
+
+27. Qual alternativa apresenta uma relação pouco adequada para herança?
+    a) `Cachorro` e `Animal`  
+    b) `Gerente` e `Funcionario`  
+    c) `Carro` e `Motor`  
+    d) `Professor` e `Pessoa`
+
+28. Em uma aplicação, `ContaCorrente` e `ContaPoupanca` compartilham `numero` e `saldo`, definidos em `Conta`. Essa organização exemplifica:
+    a) Herança  
+    b) Instanciação  
+    c) Criação de atributos locais  
+    d) Criação de objetos independentes
+
+29. Se várias classes apresentam as mesmas características gerais, uma solução orientada a objetos pode ser:
+    a) Criar uma classe mais geral para reunir essas características  
+    b) Duplicar os mesmos atributos em todas as classes obrigatoriamente  
+    c) Transformar todas as classes em métodos  
+    d) Remover as características compartilhadas
+
+30. Considere `Forma`, `Circulo` e `Retangulo`. Qual alternativa representa uma organização baseada em herança?
+    a) `Circulo` e `Retangulo` são especializações de `Forma`  
+    b) `Forma` é um objeto de `Circulo`  
+    c) `Retangulo` é um atributo de `Circulo`  
+    d) `Forma` é um método de `Retangulo`
+
+31. O conceito de abstração em Orientação a Objetos está relacionado a:
+    a) Representar apenas as características relevantes de uma entidade para o problema  
+    b) Representar obrigatoriamente todos os detalhes de uma entidade real  
+    c) Criar apenas métodos sem atributos  
+    d) Impedir a existência de subclasses
+
+32. Ao modelar um aluno em um sistema acadêmico, foram escolhidos apenas `nome`, `matricula` e `curso`. Características como altura e cor dos olhos foram ignoradas. Isso exemplifica:
+    a) Abstração  
+    b) Herança  
+    c) Instanciação  
+    d) Criação de método
+
+33. Em um sistema bancário, qual conjunto de características seria mais relevante para representar uma `ContaBancaria`?
+    a) Número da conta, saldo e titular  
+    b) Cor favorita do titular, altura e peso  
+    c) Marca do celular do titular e tamanho do calçado  
+    d) Nome dos vizinhos do titular
+
+34. Ao criar uma classe `Produto` para um sistema de estoque, qual informação é menos relevante para a abstração desse domínio?
+    a) Código  
+    b) Quantidade em estoque  
+    c) Preço  
+    d) Cor favorita do fabricante
+
+35. Uma boa abstração depende principalmente:
+    a) Do objetivo e do contexto do sistema  
+    b) Da quantidade máxima possível de atributos  
+    c) Da eliminação de todos os métodos  
+    d) Do uso obrigatório de herança
+
+36. Em um aplicativo de transporte, uma classe `Motorista` contém `nome`, `CNH` e `avaliacao`. Por que informações como o filme favorito do motorista podem ser ignoradas?
+    a) Porque não são relevantes para o objetivo principal do sistema  
+    b) Porque uma classe pode possuir no máximo três atributos  
+    c) Porque atributos de texto não podem ser usados  
+    d) Porque toda informação pessoal deve ser um método
+
+37. Dois sistemas diferentes podem representar a mesma entidade com atributos diferentes porque:
+    a) Cada sistema pode precisar abstrair aspectos diferentes dessa entidade  
+    b) Uma classe nunca pode possuir os mesmos atributos em sistemas diferentes  
+    c) Objetos não podem representar entidades reais  
+    d) Herança obriga cada sistema a utilizar estruturas diferentes
+
+38. Em um jogo, a classe `Personagem` utiliza `vida`, `forca` e `velocidade`. Dados como CPF e endereço não foram incluídos. Essa decisão demonstra:
+    a) Seleção de características relevantes para a abstração  
+    b) Uso incorreto de atributos  
+    c) Ausência de orientação a objetos  
+    d) Obrigatoriedade de herança
+
+39. Em um sistema veterinário, qual conjunto representa melhor uma abstração de `Animal`?
+    a) Nome, espécie, idade e peso  
+    b) Número da conta bancária do dono, profissão do dono e modelo do carro do dono  
+    c) Endereço da clínica, salário do veterinário e horário de funcionamento  
+    d) Nome do fabricante do computador utilizado na recepção
+
+40. Considere uma classe geral `Funcionario` e as classes `Professor` e `Secretario`. `Funcionario` contém `nome` e `salario`, enquanto cada especialização adiciona características próprias. Quais conceitos aparecem principalmente nesse exemplo?
+    a) Abstração e herança  
+    b) Objeto e método apenas  
+    c) Atributo e instanciação apenas  
+    d) Método e objeto apenas
