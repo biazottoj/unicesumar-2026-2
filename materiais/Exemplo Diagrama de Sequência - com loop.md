@@ -1,8 +1,7 @@
-'''
+
 @startuml
+
 hide footbox
-
-
 skinparam actorStyle awesome
 skinparam BoxPadding 10
 skinparam maxMessageSize 200
@@ -58,4 +57,3 @@ end
 
 deactivate ServicoReproducao
 @enduml
-'''
