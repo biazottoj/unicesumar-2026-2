@@ -718,6 +718,7 @@ Adicione outro bloco `opt` para enviar o comprovante, caso solicitado.
 
 Apresente a confirmação final ao estudante somente quando o cancelamento tiver sido realizado.
 
+<<<<<<< HEAD
 **Nome sugerido para o arquivo:** `exercicio\_3\_cancelar\_reserva.puml`
 
 
@@ -812,3 +813,5 @@ A construção começa com a descrição textual, passa pela identificação dos
 
 O PlantUML apenas transforma essa representação textual em um diagrama visual. A parte mais importante é compreender corretamente as interações do sistema.
 
+=======
+>>>>>>> ffbc220e8fb6a309feb3f85dea5a488549c59230
