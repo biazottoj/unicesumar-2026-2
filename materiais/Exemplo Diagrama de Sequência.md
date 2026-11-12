@@ -28,23 +28,28 @@ activate ServicoReproducao
 ServicoReproducao -> Assinatura: estaAtiva()
 
 alt assinatura está ativa
+  
   Assinatura --> ServicoReproducao:true
 
   ServicoReproducao -> Musica: reproduzir()
   ServicoReproducao -> Reproducao: registrarReproducao(idUsuario, idMusica)
   ServicoReproducao --> InterfacePlayer: musica em execução
+  
   loop enquanto o usuario nao parar a reprodução
     ServicoReproducao -> ServicoReproducao: buscarProximaMusica()
     ServicoReproducao --> ServicoReproducao: idMusica
     ServicoReproducao -> Reproducao: registrarReproducao(idUsuario, idMusica)
     ServicoReproducao -> Musica: reproduzir()
   end
+  
   opt favoritar
     Usuario -> InterfacePlayer: clica no botão favoritar
     InterfacePlayer -> ServicoReproducao: favoritarMusica()
     ServicoReproducao -> Favoritas: favoritar(idMusica)
   end
+
 ServicoReproducao --> InterfacePlayer: parar reprodução
+
 else assinatura está inativa
   Assinatura --> ServicoReproducao: false
   ServicoReproducao --> InterfacePlayer: assinatura está inativa
