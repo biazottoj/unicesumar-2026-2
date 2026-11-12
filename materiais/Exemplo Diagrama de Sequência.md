@@ -1,4 +1,3 @@
-'''
 @startuml
 hide footbox
 
@@ -34,7 +33,6 @@ alt assinatura está ativa
   ServicoReproducao -> Reproducao: registrarReproducao(idUsuario, idMusica)
   ServicoReproducao --> InterfacePlayer: musica em execução
   loop enquanto o usuario nao parar a reprodução
-
     ServicoReproducao -> ServicoReproducao: buscarProximaMusica()
     ServicoReproducao --> ServicoReproducao: idMusica
     ServicoReproducao -> Reproducao: registrarReproducao(idUsuario, idMusica)
@@ -54,5 +52,3 @@ end
 
 deactivate ServicoReproducao
 @enduml
-
-'''
